@@ -1,0 +1,31 @@
+.login {
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 1.5em;
+  background-color: #B89E72;
+  height: 80vh;
+  width: 50vw;
+
+  box-shadow: -10px -10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.form_login {
+  display: flex;
+  flex-direction: column;
+}
+.form_login_input {
+  margin: 0.5em 1em 0.5em 1em;
+}
+@media screen and (max-width: 720px) {
+  .login {
+    height: 70vh;
+  }
+}
+
+.titulo-form {
+  margin: 1em auto 1em auto;
+}
+
+.form-button {
+  margin: 2em auto auto auto;
+  width: 50%;
+}
