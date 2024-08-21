@@ -1,9 +1,9 @@
 body {
-  background: rgb(4,3,4);
-  background: linear-gradient(125deg, rgba(4,3,4,1) 0%, rgba(48,48,55,1) 100%);
+  background: #E4E4E4!important;
 }
 .titulos {
   font-size: 46px;
+  color: #E3E3E3!important;
 }
 @media screen and (min-width: 769px) {
   .titulos {

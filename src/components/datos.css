@@ -31,7 +31,7 @@
     margin-bottom: 1em;
 }
 .card{
-    background-color: #B89E72!important;
+    background-color: #969696!important;
     height: 75vh!important;
     box-shadow: -10px -10px 5px 0px rgba(0, 0, 0, 0.75);
 }
@@ -46,6 +46,8 @@
 .card-title{
     margin-left: auto;
     margin-right: auto;
+    margin-top: 7%;
+    margin-bottom: 7%;
 }
 .card-body{
     display: flex;
@@ -62,7 +64,6 @@
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    border: 7px outset #000000;
 }
 
 /*
@@ -84,5 +85,5 @@ Rojo #e64747
 }
 
 .navbar{
-    background-color: #846943!important;
+    background-color: #606C38!important;
 }

@@ -1,7 +1,17 @@
+import "../asyncMock"
+import Muestreo from "./dato";
 import "./datos.css"
 
 
 function Datos() {
+  const DB = [
+    {id:1,temp:32},
+    {id:2,hum:55},
+    {id:3,pres:1013},
+    {id:4,cau:20},
+    {id:5,ten:220},
+    {id:6,con:20},
+]
   return (
     <>
       <div
@@ -79,7 +89,7 @@ function Datos() {
                                 <p className="card-text"><span><img className="imagen" src="./src/assets/img/fiebre.png" alt="" /></span>Temperatura</p>
                               </div>
                               <div className="col-6 muestreo">
-                                <span id="temp_1">32</span>
+                                <Muestreo med={DB[0].temp} />
                               </div>
                             </div>
 
@@ -88,7 +98,7 @@ function Datos() {
                               <p className="card-text"><span><img className="imagen" src="./src/assets/img/humedad.png" alt="" /></span>Humedad</p>
                               </div>
                               <div className="col-6 muestreo">
-                                <span id="hum_1">32</span>
+                              <Muestreo med={DB[1].hum} />°
                               </div>
                             </div>
                             
@@ -97,7 +107,7 @@ function Datos() {
                               <p className="card-text"><span><img className="imagen" src="./src/assets/img/presion.png" alt="" /></span>Presion</p>
                               </div>
                               <div className="col-6 muestreo">
-                                <span id="pres_1">32</span>
+                              <Muestreo med={DB[2].pres} />hPa
                               </div>
                             </div>
                             
@@ -119,7 +129,7 @@ function Datos() {
                                 <p class="card-text textos"><span><img className="imagen" src="./src/assets/img/caudal.png" alt="" /></span>Caudal</p>
                                 </div>
                                 <div className="col-6 muestreo">
-                                  <span id="caud">32</span>
+                                <Muestreo med={DB[3].cau} />M³/s
                                 </div>
                               </div>
 
@@ -128,7 +138,7 @@ function Datos() {
                                 <p class="card-text textos"><span><img class="imagen" src="./src/assets/img/tension.png" alt="" /></span>Tensión</p>
                                 </div>
                                 <div className="col-6 muestreo">
-                                  <span id="tens">32</span>
+                                <Muestreo med={DB[4].ten} />V
                                 </div>
                               </div>
                               
@@ -137,7 +147,7 @@ function Datos() {
                                 <p class="card-text textos"><span><img className="imagen" src="./src/assets/img/consum.png" alt="" /></span>Consumo de Corriente</p>
                                 </div>
                                 <div className="col-6 muestreo">
-                                  <span id="cons">32</span>
+                                <Muestreo med={DB[5].con} />kW/h
                                 </div>
                               </div>
 
